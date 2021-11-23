@@ -15,8 +15,6 @@ function requestApi() {
     }
   })
   .then(function(res) {
-    // res.data.body
-    console.log(res)
     listBuss(res)
   })
   .catch(function(err) {                
