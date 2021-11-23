@@ -1,0 +1,238 @@
+@import url('nav.css');
+@import url('text.css');
+@import url('buttons.css');
+
+:root {
+  /* --------------Colors-------------- */
+  --c-primary: #FFF;
+  --c-secondary: #999999;
+
+   /* --------------Backgrounds-------------- */
+  --bg-primary: #242424;
+  --bg-secondary: #1C1C1C;
+
+  /* --------------Gradient-------------- */
+  --bg-primary-gradient: linear-gradient(0deg, rgba(38,76,110,1) 0%, rgba(54,103,135,1) 45%, rgba(57,174,198,1) 100%);
+
+
+  /* --------------Shadow-------------- */
+  --shadow-primary: 5px 5px 15px 5px rgba(0,0,0,0.21);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+.container {
+  height: calc(100vh - 60px);
+  background-color: var(--bg-primary);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
+  height: 60px;
+  padding: 0px 40px 0px 40px;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 150px 0px 150px; 
+  height: 100%;
+}
+
+.banner-menu{
+  width: 100%;
+  height: 90px;
+  background-image: url('../images/bus.jpg');
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background-image: url('../images/bus.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h1 {
+  width: 50%;
+  font-size: 80px;
+}
+
+/* --------------Propriedades-------------- */
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.input {
+  background-color: var(--bg-primary);
+  padding: 12px;
+  border: 0px;
+  border-radius: 16px;
+  color: var(--c-secondary);
+  font-size: 16px;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--bg-secondary);
+  color: var(--bg-secondary);
+  border-radius: 16px;
+}
+
+.table-row:hover {
+  cursor: pointer;
+  -webkit-box-shadow: var(--shadow-primary); 
+  box-shadow: var(--shadow-primary);
+}
+
+
+/* --------------Card-------------- */
+
+.card {
+  background-color: var(--bg-secondary);
+  color: var(--bg-secondary);
+  border-radius: 16px;
+  width: 100%;
+}
+
+.card:hover {
+  transition: transform 0.4s;
+  transform: rotate(-2deg); 
+  -webkit-box-shadow: var(--shadow-primary); 
+  box-shadow: var(--shadow-primary);
+  cursor: pointer;
+}
+
+.card-header {
+  background: rgb(38,76,110);
+  background: var(--bg-primary-gradient);
+  height: 130px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card-description {
+  padding: 12px;
+}
+
+.card-description h5{
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.section {
+  padding: 40px 150px 40px 150px;
+  width: 100%;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0px;
+}
+
+.wave-two {
+  position: relative;
+  top: 0px;
+}
+
+.form-contact{
+  width: 500px;
+  background-color: var(--bg-secondary);
+}
+
+
+
+@media (max-width: 600px)
+{
+  .main-menu
+   {
+    margin: 0px 20px 0px 20px;
+   }
+  .banner-menu {
+    width: 100%;
+  }
+}

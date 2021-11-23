@@ -1,0 +1,15 @@
+.exit {
+  border: 1px solid #AD2B58;
+  padding: 10px;
+  border-radius: 12px;
+  color: #AD2B58!important;
+}
+
+.exit a {
+  text-decoration: none;
+  color: #AD2B58!important;
+}
+
+nav ol,ul {
+  list-style:none;
+}

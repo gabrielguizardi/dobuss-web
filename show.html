@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="javascript/showBuss.js"></script>
+  <style>
+    .map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h3>DOBUSS</h3>
+      <nav>
+        <ul>
+          <li class="exit"><a href="index.html">Sair</a></li>
+        <ul>
+      </nav>
+    </header>
+    <main class="main-menu">
+      <section class="title-page">
+        <h4>Passagens</h4>
+        <h5>Home > Menu</h5>
+      </section>
+      <div class="flex-direction-row flex-wrap">
+        <div class="banner-menu"></div>
+        <div id="show-buss" class="mt-40">
+          <div id="container-map mb">
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </div>
+</body>
+</html>

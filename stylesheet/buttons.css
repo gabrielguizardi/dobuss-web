@@ -1,0 +1,43 @@
+.menu-button {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  background-color: var(--bg-secondary);
+  margin: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-button:hover {
+  transition: background 0.4s;
+  background: rgb(38,76,110);
+  background: var(--bg-primary-gradient);
+  cursor: pointer;
+  transform: rotate(-2deg); 
+  -webkit-box-shadow: var(--shadow-primary); 
+  box-shadow: var(--shadow-primary);
+}
+
+.menu-button img {
+  width: 35px;
+}
+
+.menu-button h4 {
+  margin-top: 8px;
+}
+
+.button {
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: primary;
+  border-radius: 16px;
+  border: 0px;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
